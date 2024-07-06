@@ -1,0 +1,138 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/48/f6/52/48f65289b3ddabdeef17cba98a3780d9.jpg);
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+#titles {
+    text-align: center;
+    background-color: gray;
+    border-style: inset;
+}
+
+#board, .boardInfo {
+    max-width: 550px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border-style: outset;
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #e1f35a;
+    border: none;
+    color: white;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #03c4ff;
+}
+
+.snakeSquare {
+    background-color: #00ff40;
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    background-color: #e91a1a;
+    border: 1px solid #000;
+}
+
+
+@media (max-width: 1200px) {
+    #board, .boardInfo {
+        max-width: 450px;
+    }
+
+    #start, .boardInfo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    #board, .boardInfo {
+        max-width: 400px;
+    }
+
+    #start, .boardInfo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #board, .boardInfo {
+        max-width: 350px;
+    }
+
+    #start, .boardInfo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    #board, .boardInfo {
+        max-width: 300px;
+    }
+
+    #start, .boardInfo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #board, .boardInfo {
+        max-width: 250px;
+    }
+
+    #start, .boardInfo {
+        font-size: 14px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        
+    }
+}
+
+@media (max-width: 360px) {
+    #board, .boardInfo {
+        max-width: 200px;
+    }
+    
+
+    #start, .boardInfo {
+        font-size: 12px;
+    }
+}
